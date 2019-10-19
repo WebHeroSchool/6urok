@@ -1,0 +1,118 @@
+body {
+  height: 100vh;
+  background: #F5E9D9
+}
+.background_image {
+  display: grid;
+  place-items: left;
+  color: black;
+  position: relative;
+  }
+.background_image::before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url(https://abcknit.ru/wp-content/uploads/2010/09/156.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: opacity(50%);
+  }
+  .text_main_inside {
+  position: relative;
+  font: bold 14px sans-serif;
+  }
+  h1 {
+    text-align: center;
+    color: black;
+    background-color: white;
+  }
+  h1:before, h1:after {
+content: "X";
+font-family: 'Dancing Script', cursive;
+color: #f7b21c;
+text-shadow: 1px 1px 2px grey; 
+}
+h1:before {
+margin-right: 30px;
+}
+h1:after {
+margin-left: 30px;
+}
+
+  .first_article {
+    height: 150px;
+    width: 150px;
+    float: left;
+    background-color: white;
+    border: solid 1px;
+  }
+  .second_article {
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    border: solid 1px;
+    float: left;
+  }
+  .list-of-products {
+    height: 150px;
+    float: left;
+    width: 150px;
+    background-color: white;
+    border: solid 1px;
+  }
+  .third_article {
+text-align: left;
+float: left;
+  }
+.postcard {
+  max-width: 350px;
+  margin: 50px auto 0;
+  padding: 20px;
+  background: #fffdee;
+  position: relative;
+  border: 10px solid;
+  border-image: 10 repeating-linear-gradient(135deg, #C42061, #C42061 10px, transparent 10px, transparent 20px, #FBCFDF 20px, #FBCFDF 30px,transparent 30px, transparent 40px);
+  font-family: "Playfair Display";
+  color: #605756;
+}
+.form-row {margin-bottom: 15px;}
+.form-row input[type="text"], 
+.form-row input[type="email"], 
+.form-row textarea {
+  width: 100%;
+  padding: 0 10px;
+  line-height: 35px;
+  border-width: 0;
+  outline: none;
+  background: url(https://html5book.ru/wp-content/uploads/2016/12/bg-form.png) bottom left repeat-x;
+  background-size: 8px 35px;
+  font-family: 'Playfair Display';
+}
+.form-row textarea {
+  background-attachment: local;
+  background-repeat: repeat;
+  resize: none;
+}
+.form-row input[type="submit"] {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background: #F67CA5;
+  border-width: 0;
+  cursor: pointer;
+  outline: none;
+  font-family: 'Playfair Display';
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #fffdee;
+  text-transform: uppercase;
+  transition: 1s cubic-bezier(.165, .84, .44, 1);
+}
+.form-row input[type=submit]:hover {background: #C42061;}
+  .footer {
+  position: relative;
+  font: italic 10px sans-serif;
+  }
